@@ -5,7 +5,7 @@
 # Uncetainty-Aware Attention for Reliable Interpretation and Prediction
 + Jay Heo(KAIST, Co-author), Hae Beom Lee (KAIST, Co-author), Saehoon Kim (AITRICS), Juho Lee (Univ. Oxford), Kwang Joon Kim(Yonsei University College of Medicine), Eunho Yang (KAIST), and Sung Ju Hwang (KAIST)
 
-<b> Update (November 4, 2018)</b> TensorFlow implementation of [Uncetainty-Aware Attention for Reliable Interpretation and Prediction](https://arxiv.org/pdf/1805.09653.pdf) which introduces uncertainty-aware attention mechanism for time-series data (in Healthcare). We model the attention weights as Gaussian distribution with input dependent noise that the model generates attention with small variance when it is confident about the contribution of the gived features and allocates noisy attentions with large variance to uncertainty features for each input.
+<b> Update (November 4, 2018)</b> TensorFlow implementation of [Uncetainty-Aware Attention for Reliable Interpretation and Prediction](https://arxiv.org/pdf/1805.09653.pdf) which introduces uncertainty-aware attention mechanism for time-series data (in Healthcare). We model the attention weights as Gaussian distribution with input dependent noise that the model generates attention with small variance when it is confident about the contribution of the given features and allocates noisy attentions with large variance to uncertainty features for each input.
 
 ## Abstract
 <p align="center">
@@ -39,8 +39,8 @@ This code is written in Python2.7 and requires [TensorFlow 1.3](https://www.tens
 
 ### Run the model
 1. I've provided two different scripts for running UA and UA+ models. 
-2. Before running, you can specify the size of 'embed_size', the size of the 'hidden_units' in LSTM cells, and the number of recurrent layers that generate attention alpha and beta in run_UA.py file.
-3. Dropouts rates can be adjusted in model_UA.py file.
+2. Before running, you can specify the size of 'embed_size', the size of the 'hidden_units' in LSTM cells, and the number of recurrent layers that generate attention alpha and beta in `run_UA.py` file.
+3. Dropouts rates can be adjusted in `model_UA.py` file.
 4. To train and evaluate the model, run command below.
 ```bash
 $ cd UA-master
@@ -86,7 +86,7 @@ If you found the provided code useful, please cite our work.
 ```
 
 ### Run examples
-1. Move to dropmax-master folder
+1. Move to `dropmax-master` folder
 2. Modify ```--mnist_path```, in ```run.sh```
 3. Specify ```--model``` among ```softmax``` or ```dropmax```, in ```run.sh```
 4. Run ```run.sh```
@@ -113,7 +113,7 @@ Note that LeNet is used as the base network for this code, whereas in the paper 
 
 **These works were supported by Institute for Information & Communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No.2017-0-01779, A machine learning and statistical inference framework for explainable artificial intelligence)**
 
-+ Project Name : A machine learning and statistical inference framework for explainable artificial intelligence(의사결정 이유를 설명할 수 있는 인간 수준의 학습·추론 프레임워크 개발)
++ Project Name : A machine learning and statistical inference framework for explainable artificial intelligence (의사결정 이유를 설명할 수 있는 인간 수준의 학습·추론 프레임워크 개발)
 
 + Managed by Ministry of Science and ICT/XAIC <img align="right" src="http://xai.unist.ac.kr/static/img/logos/XAIC_logo.png" width=300px>
 
